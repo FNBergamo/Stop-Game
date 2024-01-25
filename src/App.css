@@ -7,16 +7,31 @@
   height: 100vh;
 }
 
-.App > p {
+.letter,
+.timer {
   font-size: 210px;
 }
 
-.App > button {
+.button {
   padding: 4px 8px;
   border-radius: 12px;
   font-size: 24px;
 }
 
-.App > button:hover {
+.button:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .letter,
+  .timer {
+    font-size: 160px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .letter,
+  .timer {
+    font-size: 120px;
+  }
 }

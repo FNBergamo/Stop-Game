@@ -60,9 +60,11 @@ export default function App() {
 
   return (
     <div className='App'>
-      <p>{formattedTime}</p>
-      <p>{letter}</p>
-      <button onClick={newRound}>Sortear</button>
+      <p className='timer'>{formattedTime}</p>
+      <p className='letter'>{letter}</p>
+      <button className='button' onClick={newRound}>
+        Sortear
+      </button>
     </div>
   )
 }

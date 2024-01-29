@@ -1,33 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import dayjs from 'dayjs'
+import { PLAYABLE_LETTERS_ARRAY } from './contants/playableLetters'
 import './App.css'
 
-const DEFAULT_LETTERS_ARRAY = [
-  'A',
-  'B',
-  'C',
-  'D',
-  'E',
-  'F',
-  'G',
-  'I',
-  'J',
-  'L',
-  'M',
-  'N',
-  'O',
-  'P',
-  'Q',
-  'R',
-  'S',
-  'T',
-  'U',
-  'V',
-]
 export default function App() {
   const initialTime = 120
   const [elapsedTime, setElapsedTime] = useState(0)
-  const [letters, setLetters] = useState(DEFAULT_LETTERS_ARRAY)
+  const [letters, setLetters] = useState(PLAYABLE_LETTERS_ARRAY)
   const [letter, setLetter] = useState('')
 
   useEffect(() => {
